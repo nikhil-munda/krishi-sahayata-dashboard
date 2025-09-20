@@ -13,12 +13,35 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
+        inter: ['Inter', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        
+        // Agricultural portal specific colors
+        agricultural: {
+          primary: "hsl(var(--agricultural-primary))",
+          "primary-hover": "hsl(var(--agricultural-primary-hover))",
+          "primary-foreground": "hsl(var(--agricultural-primary-foreground))",
+        },
+        government: {
+          blue: "hsl(var(--government-blue))",
+          "blue-hover": "hsl(var(--government-blue-hover))",
+          "blue-foreground": "hsl(var(--government-blue-foreground))",
+        },
+        status: {
+          success: "hsl(var(--status-success))",
+          warning: "hsl(var(--status-warning))",
+          danger: "hsl(var(--status-danger))",
+          info: "hsl(var(--status-info))",
+        },
+        
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
